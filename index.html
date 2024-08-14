@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>TalentTrack </title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" type="x-icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+    
+     <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="#HomeContent">Home</a></li>
+            <li><a href="#AboutUsMain">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contactUs">Contact</a></li>
+            <li><button class="btn-register" id="registerBtn">Click To Register</button></li>
+
+        </ul>
+        <ul>
+            <li ><a href="#HomeContent">TalentTrack </a></li>
+            <li class="hideOnMobile"><a href="#HomeContent">Home</a></li>
+            <li class="hideOnMobile"><a href="#AboutUsMain">About Us</a></li>
+            <li class="hideOnMobile"><a href="#courses">Courses</a></li>
+            <li class="hideOnMobile"><a href="#contactUs">Contact</a></li>
+            <li class="hideOnMobile"><button class="btn-register" id="registerBtnd">Click To Register</button></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav> 
+
+    
+
+    <main>
+        <!-- Home Page -->
+        <section class="HomeContent" id="HomeContent">
+            <div class="home-text">
+                <h6>The Best Online Learning Platform</h6>
+                <h1>Welcome To <span>TalentTrack!</span></h1>
+                <p>Build skills with courses, certificates, and degrees online from world-class universities and
+                    companies</p>
+                <div class="latter">
+                    <form>
+                        <input type="email" placeholder="Write Your Email" required>
+                        <input type="submit" value="lets start" required>
+                    </form>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <img src="Images/home.png" alt="Home">
+            </div>
+        </section>
+
+        <section>
+            <div class="sponsors">
+                <h1>PROUDLY SPONSORED BY</h1>
+                <div class="sponsors-images">
+                    <img src="Images/Simplilearn_logo.png" alt="Simplilearn Logo">
+                    <img src="Images/toppr_logo.png" alt="Toppr Logo">
+                    <img src="Images/edexcel-vector-logo-removebg-preview (1).png" alt="Edexcel Logo">
+                    <img src="Images/macmillan-logo.png" alt="Macmillan Logo">
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- About Us -->
+        <section class="AboutUs" id="AboutUsMain">
+            <h1 class="text-center mt-5 display-3 fw-bold">About <span class="theme-text">Us</span></h1>
+            <div class="AboutUs-content">
+                <div class="AboutUs-features">
+                    <div class="AboutUs-box">
+                        <i class="uil uil-books"></i>
+                        <h3>Premier Learning
+                        </h3>
+                        <label>The automated process all your website tasks.</label>
+                    </div>
+                    <div class="AboutUs-box">
+                        <i class="uil uil-presentation-check"></i>
+                        <h3>Expert instructors</h3>
+                        <label>The automated process all your website tasks.</label>
+                    </div>
+                    <div class="AboutUs-box">
+                        <i class="uil uil-clock"></i>
+                        <h3>Life time access</h3>
+                        <label>The automated process all your website tasks.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="AbtUsPara">
+                <p>Welcome to our platform, where we believe that education should be accessible and engaging for
+                    everyone. Our online courses are designed to cater to diverse learning needs, offering a variety of
+                    subjects ranging from technology to arts. We pride ourselves on providing high-quality content
+                    created by industry experts and experienced educators. Whether you're looking to upskill, explore
+                    new interests, or advance your career, our interactive and flexible learning environment is here to
+                    support your educational journey. With user-friendly resources and continuous support, we're
+                    committed to helping you achieve your learning goals and succeed in your professional endeavors.</p>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><i class="uil uil-envelope-alt"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+            </div>
+        </section>
+
+        <!-- Courses -->
+        <div class="courses-container" id="courses">
+            <!-- <h1 class="courses-title">Our Courses</h1> -->
+            <h1 class="text-center mt-5 display-3 fw-bold">Our <span class="theme-text">Courses</span></h1>
+            <hr class="courses-divider">
+            <div class="courses-row">
+                <div class="course-card">
+                    <!-- card starts here -->
+                    <div class="card">
+                        <img src="images/Wavy_Trv-02_Single-09.jpg" alt="Web Development" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Web Development</h3>
+                            <hr class="card-divider">
+                            <p class="card-text">From HTML and CSS to JavaScript and beyond, you'll learn how to create
+                                visually appealing and functional web applications. Gain hands-on experience with
+                                real-world projects and become a web developer.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card ends here -->
+                </div>
+                <div class="course-card">
+                    <!-- card starts here -->
+                    <div class="card">
+                        <img src="Images/MAD.jpg" alt="App Development" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">App Development</h3>
+                            <hr class="card-divider">
+                            <p class="card-text">
+                                Learn to design, build, and deploy apps for both Android and iOS platforms. Explore
+                                popular frameworks and tools, and develop skills to create high-performing applications.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card ends here -->
+                </div>
+                <div class="course-card">
+                    <!-- card starts here -->
+                    <div class="card">
+                        <img src="images/marketing_online_3.jpg" alt="Digital Marketing" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Digital Marketing</h3>
+                            <hr class="card-divider">
+                            <p class="card-text">
+                                Learn strategies for SEO, social media, content marketing, and more. Understand how to
+                                analyze and optimize digital campaigns to drive engagement and conversions.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card ends here -->
+                </div>
+                <div class="course-card">
+                    <!-- card starts here -->
+                    <div class="card">
+                        <img src="images/data.jpg" alt="Data Science" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Data Science</h3>
+                            <hr class="card-divider">
+                            <p class="card-text">
+                                Learn to analyze large datasets using statistical methods and ML algorithms. Gain
+                                practical experience with data visualization tools
+                            <p>
+                        </div>
+                    </div>
+                    <!-- card ends here -->
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <section class="contact-us" id="contactUs">
+            <div class="contact-container">
+                <!-- Content and Form Container -->
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h1>Let's Get in Touch</h1>
+                        <p>We are here for you !</p>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name"> Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-image">
+                        <img src="Images/contactus.jpg" alt="Contact Us">
+                    </div>
+                </div>
+                <!-- Owner's Contact Information -->
+                <div class="owner-contact">
+                    <div class="contact-item">
+                        <span><i class="uil uil-location-point"></i>
+                            <p>123 Business St, Suite 456, City, Country</p>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span><i class="uil uil-phone"></i>
+                            <p>(123) 456-7890</p>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span><i class="uil uil-envelope"></i>
+                            <p>talent_track@gmail.com</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Container for the registration form -->
+    <div id="formContainer"></div>
+
+       
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h1>TalentTrack</h1>
+                    </div>
+                    <div class="footer-links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h2>Follow Us</h2>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <h2>Contact Us</h2>
+                        <p><i class="uil uil-location-point"></i> 123 Main Street, City, Country</p>
+                        <p><i class="uil uil-phone"></i> +123 456 7890</p>
+                        <p><i class="uil uil-envelope"></i>talent_track@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 TalentTrack. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script src="JS/script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
